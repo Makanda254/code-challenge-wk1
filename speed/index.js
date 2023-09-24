@@ -2,6 +2,8 @@ const {speedDetector} = require("./speed");
 
 const readline = require("readline");
 
+//Creates user interaction interface
+
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
