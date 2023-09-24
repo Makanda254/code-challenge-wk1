@@ -1,6 +1,8 @@
- //const input= require("./index")
+
  let mark;
- 
+
+ //Specifies the grading sacle
+
  function getGrade(mark){
    if(mark > 79 && mark <= 100){
      return 'A';
@@ -16,7 +18,7 @@
 
  }
 
+ //Allows index.js to access the above function
  module.exports ={getGrade}
 
- //export{getGrade};
- //console.log(getGrade(49));
+ 
