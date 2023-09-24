@@ -3,17 +3,20 @@
  
  function getGrade(mark){
    if(mark > 79 && mark <= 100){
-     console.log("A");
+     return 'A';
    } else if(mark >= 60 && mark<= 79){
-    console.log("B");
-   } else if(mark > 49 && mark <= 59){
-    console.log("C");
+     return 'B';
+   } else if(mark >= 50 && mark <= 59){
+     return 'C';
    } else if(mark >= 40 && mark <= 49){
-    console.log("D");
+     return 'D';
    } else if(mark < 40){
-    console.log("E");
+     return 'E';
    }
 
  }
 
+ module.exports ={getGrade}
+
+ //export{getGrade};
  //console.log(getGrade(49));
