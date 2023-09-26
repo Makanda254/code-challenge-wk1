@@ -1,21 +1,19 @@
  let speed;
- const speedLimit = 70;
- let getDemerit;
+ const speedLimit = 70; // sopecifies constant speed limit of 70km/hr
+ 
 
-//Checks speed 
-
+//Function that checks speed 
  function speedDetector(speed){
 
 //Checks whether speed is greater than 70   
-
    if(speed <= speedLimit){
      return 0;
    } else {
 
-//Calculates demerit points for speed about 70
-    const excessSpeed = speed - speedLimit;
+
+    const excessSpeed = speed - speedLimit;// Calculates excess speed
     const demeritValue = 5 ;
-    const demerit= excessSpeed / demeritValue;
+    const demerit= excessSpeed / demeritValue;//Calculates demerit points for speed about 70
     return demerit;
    }
  }
